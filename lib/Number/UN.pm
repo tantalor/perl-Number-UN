@@ -9,9 +9,11 @@ use Path::Class 'file';
 use Exporter 'import';
 our @EXPORT_OK = qw(get_un);
 
+our $VERSION = '0.01';
+
 =head1 NAME
 
-Number::UN
+Number::UN - UN Numbers
 
 =head1 SYNOPSIS
 
