@@ -1,4 +1,5 @@
 package Number::UN;
+# ABSTRACT: details about UN numbers
 
 use strict;
 use warnings;
