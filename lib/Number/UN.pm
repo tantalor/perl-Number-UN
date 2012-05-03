@@ -4,7 +4,7 @@ package Number::UN;
 use strict;
 use warnings;
 
-use JSON::Syck;
+use JSON 'decode_json';
 use Path::Class 'file';
 
 use Exporter 'import';
@@ -26,10 +26,12 @@ Number::UN - UN Numbers
 =cut
 
 sub get_un {
-  my $data_filename = sprintf "%s/%04d.json", data_dir(), shift;
-  return unless -e $data_filename;
-  my $data = JSON::Syck::LoadFile($data_filename) or return;
-  return %$data;
+  my $fn = sprintf "%s/%04d.json", data_dir(), shift;
+  return unless -e $fn;
+  open my $fh, '<', $fn;
+  my $text = <$fh>;
+  my $hashref = decode_json $text or return;
+  return %$hashref;
 }
 
 sub data_dir {
