@@ -1,6 +1,8 @@
 package Number::UN;
 
 use strict;
+use warnings;
+
 use JSON::Syck;
 use Path::Class 'file';
 
