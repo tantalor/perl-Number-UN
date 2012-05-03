@@ -1,11 +1,17 @@
-UN Numbers
-=========
+perl-UN
+======
 
-The data directory contains one JSON file for each UN Number, e.g., data/1203.json.
+This perl module presents an interface for details about UN numbers.
 
-Each JSON file contains three keys, "description", "class", and "number".
+Example
+-------
 
-For example, https://raw.github.com/tantalor/un/master/data/1203.json
+```perl
+use UN 'get_un';
+
+my %un = get_un(1993);
+print $un{description}; # Combustible liquids, n.o.s.
+```
 
 What is a UN number?
 --------------------
@@ -22,9 +28,7 @@ What is a UN number?
     
 From [UN number - Wikipedia](http://en.wikipedia.org/wiki/UN_number), 16 Feb 2012.
 
-License
--------
+Licenses
+--------
 
-Collected from [List of UN numbers - Wikipedia](http://en.wikipedia.org/wiki/List_of_UN_numbers), 16 Feb 2012.
-
-Distributed under the [Creative Commons Attribution-ShareAlike License](http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License).
+See licenses in `data/README.md` and `lib/README.md`.
