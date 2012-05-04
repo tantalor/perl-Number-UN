@@ -23,9 +23,9 @@ Number::UN - UN Numbers
 
 =head1 LICENSE
 
-The source code is distributed under the Perl5/Artistic License (http://dev.perl.org/licenses/artistic.html), copyright John Tantalo (2012).
+The source code is distributed under the L<Perl5/Artistic License|http://dev.perl.org/licenses/artistic.html>, copyright John Tantalo (2012).
 
-The data materia is distributed under the Creative Commons Attribution-ShareAlike License (http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License). This material was collected from List of UN numbers (http://en.wikipedia.org/wiki/List_of_UN_numbers), 16 Feb 2012.
+The data material, including UN number descriptions, is distributed under the L<Creative Commons Attribution-ShareAlike License|http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License>. This material was collected from L<List of UN numbers|http://en.wikipedia.org/wiki/List_of_UN_numbers>, 16 Feb 2012.
 
 =cut
 
